@@ -14,7 +14,9 @@ public class ValidateMetaCharacter {
     public static void main (String[] args) {
         String metaCharacterStr1 = "myArray[0] == 0.39";
         String metaCharacterStr2 = ".";
-        String regex1 = "\\[";//经测试，元字符 “[” 必须要经过转义，才可以进行匹配，不然编译不通过
+        //经测试，元字符 “[” 必须要经过转义，才可以进行匹配，不然编译不通过
+        //经测试，对于“]” 字符，在Java中不算元字符，匹配“]” 可以不用转义进行匹配操作
+        String regex1 = "\\[";
         String regex2 = ".";//经测试  .  和\\.  是一样的，同样匹配单字符“.”
         Pattern pattern1 = Pattern.compile(regex1);
         Pattern pattern2 = Pattern.compile(regex2);
