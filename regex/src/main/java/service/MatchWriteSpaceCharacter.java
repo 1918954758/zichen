@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  * @description: 匹配空格\s，以及测试matcher()和matches()两个方法匹配的范围
  * @author:
  */
-public class RegexWriteSpaceCharacter {
+public class MatchWriteSpaceCharacter {
 
     public static void main (String[] args) {
         String tabCharacter = "     ";
