@@ -18,6 +18,7 @@ public class MatchObliqueLine {
         System.out.println(m.find());
     }
 }
+
 class ReplaceStr{
     public static void main(String[] args) {
         String obliqueLine = "\\usr\\lib\\sales";
